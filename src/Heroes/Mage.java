@@ -1,0 +1,5 @@
+package Heroes;
+
+class Mage{
+
+}

@@ -1,0 +1,5 @@
+package Enemies;
+
+class Orc {
+
+}
