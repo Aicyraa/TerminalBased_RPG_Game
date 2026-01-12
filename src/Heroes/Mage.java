@@ -1,7 +1,6 @@
 package Heroes;
 import character.util.Character;
 
-
 class Mage extends Character {
 
     public Mage(String user){
