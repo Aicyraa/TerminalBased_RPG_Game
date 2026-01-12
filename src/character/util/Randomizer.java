@@ -9,9 +9,8 @@ public class Randomizer {
         return (int) (Math.random() * value + 1);
     }
 
-    public int generateHealth(int health){
+    public int generateEnemyHealth(int health){
         return health * randomNumber(3);
     }
-
 
 }
