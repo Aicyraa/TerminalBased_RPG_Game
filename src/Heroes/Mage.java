@@ -9,8 +9,4 @@ public class Mage extends Character {
         setMaxHealth(50);
     }
 
-    public Object heroDetails(){
-        return new Object[]{getUser(), getHeroName(), getMaxHealth()};
-    }
-
 }

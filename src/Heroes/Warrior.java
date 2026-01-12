@@ -9,8 +9,4 @@ public class Warrior extends Character{
         setMaxHealth(100);
     }
 
-    public Object heroDetails(){
-        return new Object[]{getUser(), getHeroName(), getMaxHealth()};
-    }
-
 }
