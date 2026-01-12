@@ -1,7 +1,7 @@
 package Heroes;
 import character.util.Character;
 
-class Assasin extends Character {
+public class Assasin extends Character {
 
     public Assasin(String user){
         setUser(user);
