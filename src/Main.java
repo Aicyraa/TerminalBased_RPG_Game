@@ -1,25 +1,25 @@
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
+import character.util.Character;
 import Heroes.Archer;
 import Heroes.Assassin;
 import Heroes.Mage;
 import Heroes.Warrior;
-import character.util.Character;
 
 public class Main {
 
     // GOAL
-    // Choose Character.Character
-    // Print Chosen Character.Character Info
-    // Print option (Change or Play)
     // select random enemy
     // select random stats for enemy
     // gameplay
 
     private static final Scanner INPUT = new Scanner(System.in);
+    static Character hero;
 
     public static void main(String[] args) {
-        Object hero = chooseCharacter();
+        hero = chooseCharacter();
+        gameConfirm();
     }
 
     private static Character chooseCharacter(){
@@ -43,5 +43,31 @@ public class Main {
         System.out.printf("Health: %s \n", chosenHero.getMaxHealth());
 
         return chosenHero;
+    }
+
+    private static void  gameConfirm() {
+
+        int confirmation;
+
+        while (true) {
+            try {
+
+                System.out.print("Play(1) | Quit(2) | Change Hero(3) ");
+                confirmation = INPUT.nextInt();
+
+                if (confirmation == 1) break;
+                else if (confirmation == 2) break;
+                else if (confirmation == 3) chooseCharacter();
+                else { throw new InputMismatchException("Invalid input!"); }
+
+            } catch (InputMismatchException e){ System.out.print("Invalid Value!"); }
+
+        }
+
+    }
+
+
+    private static void gameplay(){
+
     }
 }
