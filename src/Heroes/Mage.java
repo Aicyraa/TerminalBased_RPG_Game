@@ -1,3 +1,4 @@
+package Heroes;
 
 import character.util.Character;
 import character.util.Skill;
