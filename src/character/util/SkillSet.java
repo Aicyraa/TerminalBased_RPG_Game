@@ -1,11 +1,17 @@
 package character.util;
 
-public class Skillset {
+public class SkillSet {
 
     private Skill[] skills;
 
-    public Skillset(Skill[] skills){
-        this.skills = skills;
+    public SkillSet(Skill[] skills) { this.skills = skills; }
+
+    public Skill[] getAllSkill() {
+        return skills;
+    }
+
+    public int getSKillCount(){
+        return skills.length;
     }
 
     public Skill getSkill(int index) {
@@ -14,14 +20,6 @@ public class Skillset {
         }
 
         return null;
-    }
-
-    public Skill[] getAllSkill() {
-        return skills;
-    }
-
-    public int getSKillCount(){
-        return skills.length;
     }
 
     public void displaySkills() {
