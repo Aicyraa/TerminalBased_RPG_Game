@@ -7,8 +7,8 @@ import character.util.SkillSet;
 public class Witch extends Enemy {
 
     public Witch() {
-        setHeroName("Witch");
-        setMaxHealth(75);
+        setCharacterName("Witch");
+        setEnemyHealth(75);
         setMaxMana(120);
 
         Skill[] skills = {

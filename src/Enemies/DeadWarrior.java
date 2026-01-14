@@ -6,7 +6,7 @@ import character.util.SkillSet;
 public class DeadWarrior extends Enemy {
 
     public DeadWarrior() {
-        setHeroName("Dead Warrior");
+        setCharacterName("Dead Warrior");
         setEnemyHealth(100);
         setMaxMana(60);
 

@@ -6,8 +6,8 @@ import character.util.SkillSet;
 public class Gnome extends Enemy {
 
     public Gnome() {
-        setHeroName("Gnome");
-        setMaxHealth(60);
+        setCharacterName("Gnome");
+        setEnemyHealth(60);
         setMaxMana(80);
 
         Skill[] skills = {
