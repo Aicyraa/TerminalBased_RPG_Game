@@ -8,7 +8,7 @@ public class Mage extends Character {
 
     public Mage(String user) {
         setUser(user);
-        setHeroName("Mage");
+        setCharacterName("Mage");
         setMaxHealth(70);
         setMaxMana(150);
 

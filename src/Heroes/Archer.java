@@ -8,7 +8,7 @@ public class Archer extends Character {
 
     public Archer(String user) {
         setUser(user);
-        setHeroName("Archer");
+        setCharacterName("Archer");
         setMaxHealth(80);
         setMaxMana(100);
 

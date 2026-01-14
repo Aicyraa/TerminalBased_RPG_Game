@@ -8,7 +8,7 @@ public class Warrior extends Character{
 
     public Warrior(String user) {
         setUser(user);
-        setHeroName("Warrior");
+        setCharacterName("Warrior");
         setMaxHealth(120);
         setMaxMana(80);
 

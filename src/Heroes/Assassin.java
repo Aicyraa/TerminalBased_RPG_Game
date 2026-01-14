@@ -8,7 +8,7 @@ public class Assassin extends Character {
 
     public Assassin(String user) {
         setUser(user);
-        setHeroName("Assassin");
+        setCharacterName("Assassin");
         setMaxHealth(90);
         setMaxMana(110);
 
