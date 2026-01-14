@@ -50,5 +50,14 @@ public class Character {
         public int getCurrentMana() { return this.currentMana; }
         public SkillSet getSkillSet() { return this.skillSet; }
 
+        public void getAllDetails() {
+                System.out.println("User: " + getUser());
+                System.out.println("Hero: " + getCharacterName());
+                System.out.println("Health: " + getCurrentHealth() + "/" + getMaxHealth());
+                System.out.println("Mana: " + getCurrentMana());
+                System.out.println("======== Skills ======== ");
+                getSkillSet().displaySkills();
+        }
+
 }
 
