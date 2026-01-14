@@ -2,16 +2,14 @@ package character.util;
 
 public class SkillSet {
 
-    private Skill[] skills;
+    private final Skill[] skills;
 
-    public SkillSet(Skill[] skills) { this.skills = skills; }
-
-    public Skill[] getAllSkill() {
-        return skills;
+    public SkillSet(Skill[] skills) {
+        this.skills = skills;
     }
 
-    public int getSKillCount(){
-        return skills.length;
+    public Skill[] getAllSkill(){
+        return this.skills;
     }
 
     public Skill getSkill(int index) {
@@ -22,9 +20,11 @@ public class SkillSet {
         return null;
     }
 
+
+
     public void displaySkills() {
         for (Skill skill : skills) {
-            System.out.print(skill);
+            System.out.println("* " + skill);
         }
     }
 }
